@@ -6,16 +6,27 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui2="http://java.sun.com/jsf/facelets"
-	>
+>
 	
 	<ui:define name="title">
-		<h:outputText value="#{msg['pages.tela2.title']}" />
+		<h:outputText value="Aceite de inscrição" />
 	</ui:define>
 	
 
 	<ui:define name="principal">
 	 	 
-	   	<p:outputLabel value="#{msg['pages.tela2.hello']}"/>
+	   	 <h:form >
+            <p:outputLabel value="Aceite de inscrição"/>
+            
+            <p:panelGrid columns="2">
+	  
+		      <p:outputLabel value="Time" />
+		      <p:outputLabel value="Nome do time 1" />
+		      
+			  </p:panelGrid>
+			  <p:commandButton value="Aceitar" />
+			  <p:commandButton value="Rescusar" />
+        </h:form>
 	   
 	</ui:define>
 </ui:composition>
