@@ -17,4 +17,6 @@ public class Partida {
 	
 	private int _placarMandante;
 	private int _placarVisitante;
+	
+	private Partida _proximaPartida;
 }
